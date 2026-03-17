@@ -27,6 +27,8 @@ body {
   min-height: 100vh;
 }
 
+/* HEADER */
+
 .site-header,
 header {
   display: flex;
@@ -58,22 +60,25 @@ nav a {
 .site-nav a:hover,
 .site-nav a.active,
 nav a:hover {
-  color: var(--yellow);
+  color: var(--green);
 }
+
+/* LOGO (refined) */
 
 .site-logo,
 .logo {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   line-height: 1;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--pink);
   text-shadow:
-    2px 2px 0 var(--green),
-    4px 4px 0 rgba(239, 255, 65, 0.8);
+    1.5px 1.5px 0 var(--green);
   white-space: nowrap;
 }
+
+/* HOME */
 
 .home-main,
 .homepage {
@@ -113,6 +118,8 @@ nav a:hover {
   color: var(--text);
 }
 
+/* PAGES */
+
 .page-main,
 .page {
   max-width: 920px;
@@ -123,31 +130,35 @@ nav a:hover {
 h1 {
   margin: 0 0 2rem 0;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 2.15rem;
+  font-size: 2.1rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text);
 }
 
 h2 {
-  margin: 2.1rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
+/* LINKS */
+
 a {
-  color: var(--yellow);
+  color: var(--green);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--green);
+  opacity: 0.7;
 }
+
+/* PUBLICATIONS */
 
 .external-link {
   margin-bottom: 2rem;
@@ -176,14 +187,12 @@ a:hover {
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
-    text-shadow 0.2s ease,
     padding-left 0.2s ease;
 }
 
 .pub-title a:hover {
-  color: var(--yellow);
-  border-bottom-color: rgba(239, 255, 65, 0.55);
-  text-shadow: 0 0 10px rgba(239, 255, 65, 0.18);
+  color: var(--green);
+  border-bottom-color: rgba(99, 255, 155, 0.5);
   padding-left: 0.15rem;
 }
 
@@ -192,6 +201,8 @@ a:hover {
   color: var(--muted);
   font-size: 0.97rem;
 }
+
+/* TEACHING */
 
 .course-list {
   margin: 0;
@@ -202,16 +213,14 @@ a:hover {
   margin-bottom: 0.7rem;
 }
 
+/* FOOTER (empty, minimal) */
+
 .site-footer,
 footer {
-  min-height: 3.5rem;
-  border-top: 1px solid transparent;
+  min-height: 3rem;
 }
 
-.site-footer p,
-footer p {
-  display: none;
-}
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .site-header,
@@ -253,6 +262,6 @@ footer p {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
