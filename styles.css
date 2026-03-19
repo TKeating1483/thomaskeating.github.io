@@ -36,7 +36,6 @@ header {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   gap: 1.2rem;
 }
 
@@ -62,14 +61,12 @@ nav a:hover {
   text-transform: uppercase;
   color: var(--pink);
   text-shadow: 1.5px 1.5px 0 var(--green);
-  white-space: nowrap;
 }
 
-/* HOMEPAGE (FIXED + LARGER IMAGE) */
+/* HOMEPAGE — LEFT ALIGNED */
 
 .homepage {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
   padding: 4rem 2.5rem 5rem 2.5rem;
 
   display: grid;
@@ -77,6 +74,8 @@ nav a:hover {
   gap: 4rem;
   align-items: start;
 }
+
+/* IMAGE */
 
 .image-column {
   width: 100%;
@@ -99,11 +98,10 @@ nav a:hover {
   margin: 0 0 1rem 0;
 }
 
-/* PAGE LAYOUT */
+/* PAGE */
 
 .page {
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   padding: 4rem 2.5rem 5rem 2.5rem;
 }
 
@@ -162,7 +160,7 @@ footer {
   height: 3rem;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media (max-width: 900px) {
   header {
@@ -172,13 +170,6 @@ footer {
   .homepage {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-  }
-
-  .page {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
   }
 
   .profile-image {
