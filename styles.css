@@ -25,6 +25,8 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -65,6 +67,8 @@ nav a:hover {
   white-space: nowrap;
 }
 
+/* Homepage */
+
 .homepage {
   width: 100%;
   padding: 4.25rem 2.5rem 5rem 2.5rem;
@@ -86,7 +90,6 @@ nav a:hover {
   width: 100%;
   max-width: 640px;
   height: auto;
-  object-fit: cover;
 }
 
 .text-column {
@@ -104,6 +107,8 @@ nav a:hover {
   margin-top: 2.4rem;
 }
 
+/* Pages */
+
 .page {
   width: 100%;
   max-width: 980px;
@@ -118,6 +123,8 @@ nav a:hover {
   margin-bottom: 2.4rem;
 }
 
+/* Research projects */
+
 .project-block {
   margin-bottom: 5.5rem;
 }
@@ -129,11 +136,13 @@ nav a:hover {
 .research-image {
   width: 100%;
   max-width: 760px;
-  aspect-ratio: 16 / 10;
+  height: 420px;
   object-fit: cover;
   display: block;
   margin: 1.8rem 0 0 0;
 }
+
+/* Typography */
 
 h1 {
   font-family: "Barlow Condensed", sans-serif;
@@ -159,6 +168,8 @@ li {
   max-width: 760px;
 }
 
+/* Links */
+
 a {
   color: var(--green);
   text-decoration: none;
@@ -169,6 +180,8 @@ a:hover {
   opacity: 0.75;
 }
 
+/* Publications */
+
 .pub-item {
   margin-bottom: 1.7rem;
 }
@@ -178,6 +191,8 @@ a:hover {
   font-style: italic;
 }
 
+/* Teaching */
+
 .course-code {
   display: inline-block;
   margin-top: 0.2rem;
@@ -185,6 +200,8 @@ a:hover {
   color: var(--muted);
   letter-spacing: 0.05em;
 }
+
+/* Lists */
 
 ul {
   padding-left: 1.2rem;
@@ -195,9 +212,13 @@ li {
   margin-bottom: 0.6rem;
 }
 
+/* Footer */
+
 footer {
   height: 3rem;
 }
+
+/* Responsive */
 
 @media (max-width: 1200px) {
   .homepage {
@@ -226,6 +247,7 @@ footer {
 
   .research-image {
     max-width: 100%;
+    height: auto;
   }
 }
 
